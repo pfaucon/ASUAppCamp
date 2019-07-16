@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SecretHandshake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="JVG-fT-tgq">
+                                <rect key="frame" x="40" y="171" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="IeA-eF-6QO">
+                                <rect key="frame" x="7" y="440" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2ri-Pn-aaJ" appends="YES" id="aQc-e3-Uin"/>
+                            <outletCollection property="gestureRecognizers" destination="ZhI-8B-gJA" appends="YES" id="HRs-Rp-MBk"/>
+                            <outletCollection property="gestureRecognizers" destination="jrT-Y9-5EA" appends="YES" id="SEa-mx-Ahd"/>
+                            <outletCollection property="gestureRecognizers" destination="TJ0-Iw-aj6" appends="YES" id="zdA-lZ-0AH"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="JVG-fT-tgq" id="haX-wv-2Ec"/>
+                        <outlet property="matchView" destination="IeA-eF-6QO" id="Ous-pP-WDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="2ri-Pn-aaJ">
+                    <connections>
+                        <action selector="handleSwipesWithSender:" destination="vXZ-lx-hvc" id="oa9-x9-9nv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="ZhI-8B-gJA">
+                    <connections>
+                        <action selector="handleSwipesWithSender:" destination="vXZ-lx-hvc" id="xwk-JD-dII"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="jrT-Y9-5EA">
+                    <connections>
+                        <action selector="handleSwipesWithSender:" destination="vXZ-lx-hvc" id="wur-3G-Nkb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="TJ0-Iw-aj6">
+                    <connections>
+                        <action selector="handleSwipesWithSender:" destination="vXZ-lx-hvc" id="Njm-aj-Yd6"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="257.97101449275362" y="189.50892857142856"/>
+        </scene>
+    </scenes>
+</document>
