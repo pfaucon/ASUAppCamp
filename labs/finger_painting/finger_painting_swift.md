@@ -67,7 +67,7 @@ following:
 import UIKit
 
 class PaintView: UIView {
-    var color: UIColor?
+    var brushColor: UIColor?
     var tempDrawImage: UIImageView? = UIImageView()
     var lastTouch: CGPoint?
 }
@@ -125,8 +125,6 @@ override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     }
     context.move(to: CGPoint(x: lastTouch.x, y: (lastTouch.y)))
     context.addLine(to: CGPoint(x: currentPoint.x, y: currentPoint.y))
-    context.setLineWidth(CGFloat(self.brushThickness))
-    context.setAlpha(CGFloat(self.opacity))
     
     //configure our drawing options
     context.setLineCap(.round)
@@ -245,55 +243,55 @@ back to our view!
 
 -   Update your <tt>MixPaintViewController</tt> to include the following protocol
     and variable based off of that protocol:
-```swift
-@objc protocol MixPaintViewControllerDelegate {
-    @objc optional func mixPaint(aMixer: AnyObject, aColor: UIColor)
-}
-class MixPaintViewController: UIViewController {
-    
-    var delegate: MixPaintViewControllerDelegate?
-    // everything else is the same
-}
-```
+    ```swift
+    @objc protocol MixPaintViewControllerDelegate {
+        @objc optional func mixPaint(aMixer: AnyObject, aColor: UIColor)
+    }
+    class MixPaintViewController: UIViewController {
+        
+        var delegate: MixPaintViewControllerDelegate?
+        // everything else is the same
+    }
+    ```
 -   From the storyboard connect the <tt>PaintView</tt> to the <tt>PaintViewController</tt>
     with an <tt>IBOutlet</tt> named paintView.
 
 -   Add this code in the <tt>PaintViewController</tt> file:
 
-```swift
-func mixPaint(aMixer: AnyObject, aColor: UIColor) {
-    self.paintView.brushColor = aColor
-}
-
-override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "segueToMix" {
-        let dest = segue.destination as! MixPaintViewController
-        dest.delegate = self
+    ```swift
+    func mixPaint(aMixer: AnyObject, aColor: UIColor) {
+        self.paintView.brushColor = aColor
     }
-}
-```
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToMix" {
+            let dest = segue.destination as! MixPaintViewController
+            dest.delegate = self
+        }
+    }
+    ```
 
 -   Now we have the pipeline, a protocol to follow, and someone to
     follow it. We just need someone to pass on messages, in this case it
     will be the <tt>MixPaintViewController</tt>. Update the <tt>updateColors</tt> method
     so that it will tell its delegate when the brush color changes:
 
-```swift
- @IBAction func updateColor() {
-    let red = CGFloat(self.redSlider.value)
-    let green = CGFloat(self.greenSlider.value)
-    let blue = CGFloat(self.blueSlider.value)
-    
-    let newColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
-    self.paintColorButton.backgroundColor = newColor
-    
-    self.paintColorButton.setNeedsDisplay()
-     
-    if self.delegate?.mixPaint != nil {
-        self.delegate?.mixPaint!(aMixer: self, aColor: self.paintColorButton.backgroundColor!)
+    ```swift
+    @IBAction func updateColor() {
+        let red = CGFloat(self.redSlider.value)
+        let green = CGFloat(self.greenSlider.value)
+        let blue = CGFloat(self.blueSlider.value)
+        
+        let newColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
+        self.paintColorButton.backgroundColor = newColor
+        
+        self.paintColorButton.setNeedsDisplay()
+        
+        if self.delegate?.mixPaint != nil {
+            self.delegate?.mixPaint!(aMixer: self, aColor: self.paintColorButton.backgroundColor!)
+        }
     }
- }
-```
+    ```
 
 Now you should be able to mix color and draw the color you mixed. Run
 your app and try it. In the end of phase II it should look like this:
@@ -324,23 +322,23 @@ and a <tt>Clear</tt> button.
     the methods as follows (note, you may need to type these methods in
     and then link them, instead of having the storyboard automatically
     generate the method prototypes):
-```swift
-// resets painter to black colored brush
-@IBAction func resetButton(sender: AnyObject) {
-    self.configure()
-    self.setNeedsDisplay()
-}
-// clears the canvas
-@IBAction func eraseButton(sender: AnyObject) {
-    self.tempDrawImage = UIImageView()
-    self.setNeedsDisplay()
-}
-// paints white to simulate an eraser
-@IBAction func clearButton(sender: AnyObject) {
-    let eraseColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1)
-    self.brushColor = eraseColor
-}
-```
+    ```swift
+    // resets painter to black colored brush
+    @IBAction func resetButton(sender: AnyObject) {
+        self.configure()
+        self.setNeedsDisplay()
+    }
+    // clears the canvas
+    @IBAction func eraseButton(sender: AnyObject) {
+        self.tempDrawImage = UIImageView()
+        self.setNeedsDisplay()
+    }
+    // paints white to simulate an eraser
+    @IBAction func clearButton(sender: AnyObject) {
+        let eraseColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1)
+        self.brushColor = eraseColor
+    }
+    ```
 
 -   Now you should be able to <tt>Reset</tt> brush color back to black, <tt>Erase</tt>
     your painting and <tt>Clear</tt> the canvas.
@@ -352,30 +350,30 @@ and a <tt>Clear</tt> button.
 -   In <tt>PaintView</tt> make two new variables to store the brush thickness and
     opacity:
 
-```swift
-    var brushThickness: Double = 0.0 
-    var opacity: Double = 0.0
-```
+    ```swift
+        var brushThickness: Double = 0.0 
+        var opacity: Double = 0.0
+    ```
 
 -   In <tt>PaintView</tt> update the <tt>configure</tt> method with the code below:
 
-```swift
-func configure() { 
-    self.brushColor = UIColor.black
-    self.brushThickness = 15 
-    self.opacity = 1
-}
-```
+    ```swift
+    func configure() { 
+        self.brushColor = UIColor.black
+        self.brushThickness = 15 
+        self.opacity = 1
+    }
+    ```
 
 -   In the <tt>touchesMoved</tt> method before this line:
-```swift
-    context.setLineCap(.round)
-```
+    ```swift
+        context.setLineCap(.round)
+    ```
     Add the following:
-```swift
-    context.setLineWidth(CGFloat(self.brushThickness))
-    context.setAlpha(CGFloat(self.opacity))
-```
+    ```swift
+        context.setLineWidth(CGFloat(self.brushThickness))
+        context.setAlpha(CGFloat(self.opacity))
+    ```
 
 -   In the storyboard on the <tt>MixPaintViewController</tt> add two new two new
     sliders and four labels.
