@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99662A1522DF8AE600A5A472 /* Boing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 99662A1022DF8AE600A5A472 /* Boing.wav */; };
+		99662A1622DF8AE600A5A472 /* SoundRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99662A1122DF8AE600A5A472 /* SoundRecorderViewController.swift */; };
+		99662A1722DF8AE600A5A472 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99662A1222DF8AE600A5A472 /* StateModel.swift */; };
+		99662A1822DF8AE600A5A472 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99662A1322DF8AE600A5A472 /* CameraViewController.swift */; };
+		99662A1922DF8AE600A5A472 /* AccelerometerGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99662A1422DF8AE600A5A472 /* AccelerometerGameViewController.swift */; };
+		99662A1C22DF8AFD00A5A472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99662A1A22DF8AFD00A5A472 /* Main.storyboard */; };
 		999C5E9E22DE9DEB00AA5736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C5E9D22DE9DEB00AA5736 /* AppDelegate.swift */; };
 		999C5EA522DE9DEC00AA5736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999C5EA422DE9DEC00AA5736 /* Assets.xcassets */; };
-		999C5EA822DE9DEC00AA5736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999C5EA622DE9DEC00AA5736 /* LaunchScreen.storyboard */; };
-		999C5EB622DE9E2A00AA5736 /* SoundRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C5EAF22DE9E2900AA5736 /* SoundRecorderViewController.swift */; };
-		999C5EB722DE9E2A00AA5736 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C5EB022DE9E2900AA5736 /* StateModel.swift */; };
-		999C5EB822DE9E2A00AA5736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999C5EB122DE9E2900AA5736 /* Main.storyboard */; };
-		999C5EB922DE9E2A00AA5736 /* AccelerometerGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C5EB322DE9E2900AA5736 /* AccelerometerGameViewController.swift */; };
-		999C5EBA22DE9E2A00AA5736 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C5EB422DE9E2900AA5736 /* CameraViewController.swift */; };
-		999C5EBB22DE9E2A00AA5736 /* Boing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 999C5EB522DE9E2A00AA5736 /* Boing.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99662A1022DF8AE600A5A472 /* Boing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Boing.wav; sourceTree = "<group>"; };
+		99662A1122DF8AE600A5A472 /* SoundRecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundRecorderViewController.swift; sourceTree = "<group>"; };
+		99662A1222DF8AE600A5A472 /* StateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateModel.swift; sourceTree = "<group>"; };
+		99662A1322DF8AE600A5A472 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		99662A1422DF8AE600A5A472 /* AccelerometerGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerGameViewController.swift; sourceTree = "<group>"; };
+		99662A1B22DF8AFD00A5A472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		999C5E9A22DE9DEB00AA5736 /* camera_microphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera_microphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		999C5E9D22DE9DEB00AA5736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		999C5EA422DE9DEC00AA5736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		999C5EA722DE9DEC00AA5736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		999C5EA922DE9DEC00AA5736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		999C5EAF22DE9E2900AA5736 /* SoundRecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundRecorderViewController.swift; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/SoundRecorderViewController.swift; sourceTree = "<group>"; };
-		999C5EB022DE9E2900AA5736 /* StateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StateModel.swift; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/StateModel.swift; sourceTree = "<group>"; };
-		999C5EB222DE9E2900AA5736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		999C5EB322DE9E2900AA5736 /* AccelerometerGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccelerometerGameViewController.swift; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/AccelerometerGameViewController.swift; sourceTree = "<group>"; };
-		999C5EB422DE9E2900AA5736 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/CameraViewController.swift; sourceTree = "<group>"; };
-		999C5EB522DE9E2A00AA5736 /* Boing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Boing.wav; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/Boing.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,14 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				999C5E9D22DE9DEB00AA5736 /* AppDelegate.swift */,
-				999C5EB322DE9E2900AA5736 /* AccelerometerGameViewController.swift */,
-				999C5EB522DE9E2A00AA5736 /* Boing.wav */,
-				999C5EB422DE9E2900AA5736 /* CameraViewController.swift */,
-				999C5EB122DE9E2900AA5736 /* Main.storyboard */,
-				999C5EAF22DE9E2900AA5736 /* SoundRecorderViewController.swift */,
-				999C5EB022DE9E2900AA5736 /* StateModel.swift */,
+				99662A1422DF8AE600A5A472 /* AccelerometerGameViewController.swift */,
+				99662A1A22DF8AFD00A5A472 /* Main.storyboard */,
+				99662A1022DF8AE600A5A472 /* Boing.wav */,
+				99662A1322DF8AE600A5A472 /* CameraViewController.swift */,
+				99662A1122DF8AE600A5A472 /* SoundRecorderViewController.swift */,
+				99662A1222DF8AE600A5A472 /* StateModel.swift */,
 				999C5EA422DE9DEC00AA5736 /* Assets.xcassets */,
-				999C5EA622DE9DEC00AA5736 /* LaunchScreen.storyboard */,
 				999C5EA922DE9DEC00AA5736 /* Info.plist */,
 			);
 			path = camera_microphone;
@@ -134,9 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				999C5EBB22DE9E2A00AA5736 /* Boing.wav in Resources */,
-				999C5EB822DE9E2A00AA5736 /* Main.storyboard in Resources */,
-				999C5EA822DE9DEC00AA5736 /* LaunchScreen.storyboard in Resources */,
+				99662A1C22DF8AFD00A5A472 /* Main.storyboard in Resources */,
+				99662A1522DF8AE600A5A472 /* Boing.wav in Resources */,
 				999C5EA522DE9DEC00AA5736 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,10 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				999C5EB922DE9E2A00AA5736 /* AccelerometerGameViewController.swift in Sources */,
-				999C5EBA22DE9E2A00AA5736 /* CameraViewController.swift in Sources */,
-				999C5EB622DE9E2A00AA5736 /* SoundRecorderViewController.swift in Sources */,
-				999C5EB722DE9E2A00AA5736 /* StateModel.swift in Sources */,
+				99662A1622DF8AE600A5A472 /* SoundRecorderViewController.swift in Sources */,
+				99662A1822DF8AE600A5A472 /* CameraViewController.swift in Sources */,
+				99662A1922DF8AE600A5A472 /* AccelerometerGameViewController.swift in Sources */,
+				99662A1722DF8AE600A5A472 /* StateModel.swift in Sources */,
 				999C5E9E22DE9DEB00AA5736 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,18 +155,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		999C5EA622DE9DEC00AA5736 /* LaunchScreen.storyboard */ = {
+		99662A1A22DF8AFD00A5A472 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				999C5EA722DE9DEC00AA5736 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		999C5EB122DE9E2900AA5736 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				999C5EB222DE9E2900AA5736 /* Base */,
+				99662A1B22DF8AFD00A5A472 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,7 +296,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.camera-microphone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -327,7 +315,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.camera-microphone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

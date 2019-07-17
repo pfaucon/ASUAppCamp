@@ -65,7 +65,6 @@ class AccelerometerGameViewController: UIViewController {
                 print("can't create audio player")
             }
         }
-
     }
 
     @objc func update() {
