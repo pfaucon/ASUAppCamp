@@ -173,14 +173,14 @@ First we will update our UI:
 
 -   Embed the <tt>PaintViewController</tt> in a <tt>Navigation Controller</tt>.
 
--   On the new <tt>MixPaintViewController</tt> drag out 3 sliders, 3 labels, and
+-   On the new <tt>MixPaintViewController</tt> drag out 3 sliders(for red, green, and blue), 3 labels, and
     1 button.
 
 -   Select the red slider and navigate to the <tt>Attributes Inspector</tt>:
 
-    -   Select <tt>min track tint</tt> and select <tt>other</tt>.
+    -   Select <tt>min track tint</tt> and select <tt>custom</tt>.
 
-    -   Select the second tab on the popup and select RGB from the drop
+    -   Select the second tab on the popup and select <tt>RGB sliders</tt> from the drop
         down menu.
 
     -   Set red to 255 and others to 0.
@@ -259,6 +259,12 @@ back to our view!
 -   Add this code in the <tt>PaintViewController</tt> file:
 
     ```swift
+    // add the MixPaintViewControllerDelegate here
+    class ViewController: UIViewController, MixPaintViewControllerDelegate {
+
+    // NOTE: this should show a filled circle on the left, it should have been created by the line above
+    @IBOutlet var paintView: PaintView!
+
     func mixPaint(aMixer: AnyObject, aColor: UIColor) {
         self.paintView.brushColor = aColor
     }
@@ -269,6 +275,8 @@ back to our view!
             dest.delegate = self
         }
     }
+
+    // everything else is the same
     ```
 
 -   Now we have the pipeline, a protocol to follow, and someone to

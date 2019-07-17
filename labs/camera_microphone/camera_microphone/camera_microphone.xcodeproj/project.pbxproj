@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		999C5E9E22DE9DEB00AA5736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C5E9D22DE9DEB00AA5736 /* AppDelegate.swift */; };
+		999C5EA522DE9DEC00AA5736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999C5EA422DE9DEC00AA5736 /* Assets.xcassets */; };
+		999C5EA822DE9DEC00AA5736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999C5EA622DE9DEC00AA5736 /* LaunchScreen.storyboard */; };
+		999C5EB622DE9E2A00AA5736 /* SoundRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C5EAF22DE9E2900AA5736 /* SoundRecorderViewController.swift */; };
+		999C5EB722DE9E2A00AA5736 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C5EB022DE9E2900AA5736 /* StateModel.swift */; };
+		999C5EB822DE9E2A00AA5736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999C5EB122DE9E2900AA5736 /* Main.storyboard */; };
+		999C5EB922DE9E2A00AA5736 /* AccelerometerGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C5EB322DE9E2900AA5736 /* AccelerometerGameViewController.swift */; };
+		999C5EBA22DE9E2A00AA5736 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C5EB422DE9E2900AA5736 /* CameraViewController.swift */; };
+		999C5EBB22DE9E2A00AA5736 /* Boing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 999C5EB522DE9E2A00AA5736 /* Boing.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		999C5E9A22DE9DEB00AA5736 /* camera_microphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera_microphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		999C5E9D22DE9DEB00AA5736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		999C5EA422DE9DEC00AA5736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		999C5EA722DE9DEC00AA5736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		999C5EA922DE9DEC00AA5736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999C5EAF22DE9E2900AA5736 /* SoundRecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundRecorderViewController.swift; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/SoundRecorderViewController.swift; sourceTree = "<group>"; };
+		999C5EB022DE9E2900AA5736 /* StateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StateModel.swift; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/StateModel.swift; sourceTree = "<group>"; };
+		999C5EB222DE9E2900AA5736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		999C5EB322DE9E2900AA5736 /* AccelerometerGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccelerometerGameViewController.swift; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/AccelerometerGameViewController.swift; sourceTree = "<group>"; };
+		999C5EB422DE9E2900AA5736 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/CameraViewController.swift; sourceTree = "<group>"; };
+		999C5EB522DE9E2A00AA5736 /* Boing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Boing.wav; path = ../../CameraMicrophoneLab/CameraMicrophoneLab/Boing.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		999C5E9722DE9DEB00AA5736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		999C5E9122DE9DEB00AA5736 = {
+			isa = PBXGroup;
+			children = (
+				999C5E9C22DE9DEB00AA5736 /* camera_microphone */,
+				999C5E9B22DE9DEB00AA5736 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		999C5E9B22DE9DEB00AA5736 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				999C5E9A22DE9DEB00AA5736 /* camera_microphone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		999C5E9C22DE9DEB00AA5736 /* camera_microphone */ = {
+			isa = PBXGroup;
+			children = (
+				999C5E9D22DE9DEB00AA5736 /* AppDelegate.swift */,
+				999C5EB322DE9E2900AA5736 /* AccelerometerGameViewController.swift */,
+				999C5EB522DE9E2A00AA5736 /* Boing.wav */,
+				999C5EB422DE9E2900AA5736 /* CameraViewController.swift */,
+				999C5EB122DE9E2900AA5736 /* Main.storyboard */,
+				999C5EAF22DE9E2900AA5736 /* SoundRecorderViewController.swift */,
+				999C5EB022DE9E2900AA5736 /* StateModel.swift */,
+				999C5EA422DE9DEC00AA5736 /* Assets.xcassets */,
+				999C5EA622DE9DEC00AA5736 /* LaunchScreen.storyboard */,
+				999C5EA922DE9DEC00AA5736 /* Info.plist */,
+			);
+			path = camera_microphone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		999C5E9922DE9DEB00AA5736 /* camera_microphone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 999C5EAC22DE9DEC00AA5736 /* Build configuration list for PBXNativeTarget "camera_microphone" */;
+			buildPhases = (
+				999C5E9622DE9DEB00AA5736 /* Sources */,
+				999C5E9722DE9DEB00AA5736 /* Frameworks */,
+				999C5E9822DE9DEB00AA5736 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = camera_microphone;
+			productName = camera_microphone;
+			productReference = 999C5E9A22DE9DEB00AA5736 /* camera_microphone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		999C5E9222DE9DEB00AA5736 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Philippe Faucon";
+				TargetAttributes = {
+					999C5E9922DE9DEB00AA5736 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 999C5E9522DE9DEB00AA5736 /* Build configuration list for PBXProject "camera_microphone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 999C5E9122DE9DEB00AA5736;
+			productRefGroup = 999C5E9B22DE9DEB00AA5736 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				999C5E9922DE9DEB00AA5736 /* camera_microphone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		999C5E9822DE9DEB00AA5736 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999C5EBB22DE9E2A00AA5736 /* Boing.wav in Resources */,
+				999C5EB822DE9E2A00AA5736 /* Main.storyboard in Resources */,
+				999C5EA822DE9DEC00AA5736 /* LaunchScreen.storyboard in Resources */,
+				999C5EA522DE9DEC00AA5736 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		999C5E9622DE9DEB00AA5736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999C5EB922DE9E2A00AA5736 /* AccelerometerGameViewController.swift in Sources */,
+				999C5EBA22DE9E2A00AA5736 /* CameraViewController.swift in Sources */,
+				999C5EB622DE9E2A00AA5736 /* SoundRecorderViewController.swift in Sources */,
+				999C5EB722DE9E2A00AA5736 /* StateModel.swift in Sources */,
+				999C5E9E22DE9DEB00AA5736 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		999C5EA622DE9DEC00AA5736 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				999C5EA722DE9DEC00AA5736 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		999C5EB122DE9E2900AA5736 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				999C5EB222DE9E2900AA5736 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		999C5EAA22DE9DEC00AA5736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		999C5EAB22DE9DEC00AA5736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		999C5EAD22DE9DEC00AA5736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWSLUFSJRA;
+				INFOPLIST_FILE = camera_microphone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.camera-microphone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		999C5EAE22DE9DEC00AA5736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWSLUFSJRA;
+				INFOPLIST_FILE = camera_microphone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.camera-microphone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		999C5E9522DE9DEB00AA5736 /* Build configuration list for PBXProject "camera_microphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				999C5EAA22DE9DEC00AA5736 /* Debug */,
+				999C5EAB22DE9DEC00AA5736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		999C5EAC22DE9DEC00AA5736 /* Build configuration list for PBXNativeTarget "camera_microphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				999C5EAD22DE9DEC00AA5736 /* Debug */,
+				999C5EAE22DE9DEC00AA5736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 999C5E9222DE9DEB00AA5736 /* Project object */;
+}
