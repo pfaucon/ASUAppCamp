@@ -144,11 +144,6 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
     }
     self.imageView.image = chosenImage
     picker.dismiss(animated: true, completion: nil)
-    
-    // State model update.
-    let model = StateModel.sharedInstance
-    model.image = chosenImage
-    print(model.image)
 }
 
 // Call this function when an image picker operation is cancelled.
@@ -453,10 +448,6 @@ object is triggering the first object to play. Add the following code:
     self.recordPauseButton.setTitle("Record", for: .normal)
     self.playButton.isEnabled = true
     self.stopButton.isEnabled = false
-    
-    // State model update.
-    let model = StateModel.sharedInstance
-    model.setRecURL(recordingURL: self.getAudioURL())
 }
 ```
 
