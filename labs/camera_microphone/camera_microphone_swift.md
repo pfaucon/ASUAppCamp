@@ -289,7 +289,7 @@ override func viewDidLoad() {
     // Set up audio session.
     let session = AVAudioSession.sharedInstance()
     do {
-        try session.setCategory(AVAudioSession.Category.playAndRecord)
+        try session.setCategory(.playAndRecord, mode: .default)
     }
     catch {
         print("Failed to initialize recording session.")
@@ -581,7 +581,7 @@ override private init() {
     
     let session = AVAudioSession.sharedInstance()
     do {
-        try session.setCategory(AVAudioSession.Category.playAndRecord)
+        try session.setCategory(.playAndRecord, mode: .default)
     }
     catch {
         print("Failed to initialize session.")
