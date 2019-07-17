@@ -62,4 +62,4 @@ Carthage/Build
 Dependencies/
 .accio/
 
-*xcworkspace/xcuserdata/*
+*xcuserdata/*

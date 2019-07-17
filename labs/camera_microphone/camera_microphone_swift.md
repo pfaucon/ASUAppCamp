@@ -243,6 +243,7 @@ following code:
 import UIKit
 import AVFoundation
 
+// Don't forget to add support for the protocols!!!
 class SoundRecorderViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
 
     @IBOutlet weak var recordPauseButton: UIButton!
